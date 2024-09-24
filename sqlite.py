@@ -22,3 +22,5 @@ print(result3_df)
 query4 = " SELECT [Age-adjusted Death Rate], [Cause Name] FROM death_causes ORDER BY [Age-adjusted Death Rate] LIMIT 10 "
 result4_df = pd.read_sql(query4, conn)
 print(result4_df)
+
+conn.close()
